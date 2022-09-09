@@ -6,7 +6,7 @@ WORKDIR /root/bin
 RUN yum update -y
 RUN yum install -y git ssh tar gzip ca-certificates gcc tar zlib-devel \ 
                    make zip bzip2 bzip2-devel readline-devel sqlite sqlite-devel \ 
-                   openssl-devel tk-devel libffi-devel xz-devel patch
+                   openssl11-devel tk-devel libffi-devel xz-devel patch
 
 COPY bin/ .
 
