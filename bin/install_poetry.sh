@@ -4,4 +4,4 @@ if [[ $? -ne 0  ]]
 then
     exit $?
 fi
-echo 'export PATH="/root/.poetry/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="/root/.local/bin:$PATH"' >> ~/.bashrc
