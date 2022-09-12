@@ -7,6 +7,7 @@ if [[ -n $1 ]]; then
   cd $1
 fi
 
+poetry config virtualenvs.prefer-active-python true
 poetry install --no-dev
 poetry build
 poetry run pip install --upgrade -t python dist/*.whl
